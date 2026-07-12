@@ -1,0 +1,88 @@
+@import "../../sass/utils/colours.scss";
+
+.main {
+  background-color: $background-main;
+  padding-top: 40px;
+
+  &__title {
+    font-family: "Candal", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 94%;
+    color: $text-primary;
+    max-width: 315px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.shop-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: $text-primary;
+  color: $text-secondary;
+  border-radius: 62px;
+  padding: 16px 54px;
+  margin-bottom: 20px;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 20px;
+  max-width: 278px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(50% - 10px);
+    min-width: 110px;
+  }
+
+  &__num {
+    font-weight: 700;
+    font-size: 24px;
+    color: $text-primary;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+  }
+}
+
+.main-images {
+  position: relative;
+
+  &__star1 {
+    position: absolute;
+    top: 40px;
+    right: 21px;
+    width: 76px;
+    height: 76px;
+  }
+
+  &__star2 {
+    position: absolute;
+    top: 137px;
+    left: 27px;
+    width: 44px;
+    height: 44px;
+  }
+}

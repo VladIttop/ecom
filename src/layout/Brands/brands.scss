@@ -1,0 +1,41 @@
+@import "../../sass/utils/colours.scss";
+
+.brands {
+  background-color: $text-primary;
+  padding: 40px 0;
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 16px; 
+  max-width: 390px; 
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      flex: 0 1 calc(33.33% - 12px);
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      flex: 0 1 calc(50% - 16px);
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

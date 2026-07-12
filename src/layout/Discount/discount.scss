@@ -1,0 +1,16 @@
+@import "../../sass/utils/colours.scss";
+
+.discount {
+    background-color: $text-primary;
+    padding: 9px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+
+    &__text, &__link {
+        color: $text-secondary;
+        font-size:12px;
+    }
+}
+
