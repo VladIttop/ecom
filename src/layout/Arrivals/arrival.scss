@@ -1,0 +1,40 @@
+@import "../../sass/utils/colours.scss";
+
+.arrivals {
+  padding: 50px 0 40px 0;
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: $text-primary;
+    margin-bottom: 32px;
+  }
+}
+
+.arrivals-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  margin-bottom: 24px;
+}
+.view-all {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  color: $text-primary;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 62px;
+  padding: 16px 54px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+
+}

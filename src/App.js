@@ -4,7 +4,7 @@ import Discount from "./layout/Discount/Discount";
 import Header from "./layout/Header/Header";
 import Main from "./layout/Main/Main";
 import Brands from "./layout/Brands/Brands";
-
+import Arrivals from "./layout/Arrivals/Arrivals";
 function App() {
   return (
     <>
@@ -12,6 +12,7 @@ function App() {
       <Header />
       <Main />
       <Brands />
+      <Arrivals />
 
       <Outlet />
     </>
