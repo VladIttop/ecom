@@ -9,6 +9,7 @@ import Header from "./layout/Header/Header";
 import { Login } from "./pages/login/Login";
 import { AuthProvider } from "./contexts/authContext";
 import { SignUp } from "./pages/signup/Signup";
+import ProductPage  from "./pages/productPage/ProductPage";
 
 const router = createBrowserRouter([
   {
@@ -24,12 +25,16 @@ const router = createBrowserRouter([
     element: <ErrorPage />,
   },
   {
-    path: "signup",
+    path: "/signup",
     element: <SignUp />,
   },
   {
-    path: "login",
+    path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/product/:id",
+    element: <ProductPage />,
   },
 ]);
 

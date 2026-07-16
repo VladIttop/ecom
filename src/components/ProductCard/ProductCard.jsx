@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { fetchClothingProducts } from "../../API/fetch";
 import Star from "../../assets/icons/star.png";
 import "./card.scss";
+import { Link } from "react-router-dom";
 
-const ProductCard = ({productAmount}) => {
+const ProductCard = ({ productAmount }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -16,8 +17,8 @@ const ProductCard = ({productAmount}) => {
     const stars = Math.floor(Math.random() * 5 + 1);
 
     return (
-      <li key={product.id} className="item">
-        <img className="item__img" src={product.images[0]} alt="" />
+      <Link key={product.id} className="item" to={`/product/${product.id}`}>
+        <img className="item__img" src={product.images.main} alt="" />
         <h2 className="item__title">{product.title}</h2>
 
         <div className="stars-row" style={{ display: "flex", gap: "2px" }}>
@@ -30,12 +31,12 @@ const ProductCard = ({productAmount}) => {
             />
           ))}
           <p className="stars-row__star">
-            {stars}/ <span className="stars-row__max">5</span>
+            {product.globalRating}/ <span className="stars-row__max">5</span>
           </p>
         </div>
 
         <p className="item__price">${product.price}</p>
-      </li>
+      </Link>
     );
   });
 };
