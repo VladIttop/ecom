@@ -5,8 +5,8 @@ import icon from "../../assets/main/icon/star-main.png";
 
 const Main = () => {
   return (
-    <section>
-      <div className="main container">
+    <section className="main">
+      <div className="container">
         <h1 className="main__title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
         <p className="main__description">
           Browse through our diverse range of meticulously crafted garments,
